@@ -3,21 +3,28 @@ const fs = require("fs");
 
 const fetchUser = () => {
     return JSON.parse(fs.readFileSync("./data/users.json"))
-  }
+}
 
 const register = (newUser) => {
     const userList = fetchUser();
-    console.log(newUser);
-    console.log(userList.users.applicants);
+    userList.users.applicants.push(newUser);
+    fs.writeFileSync("./data/users.json", JSON.stringify(userList, null, 2))
 
-userList.users.applicants.push(newUser);
-fs.writeFileSync("./data/users.json", JSON.stringify(userList, null, 2))
-
-return newUser;
+    return newUser;
 
 }
 
-module.exports = { 
+const login = (user) => {
+    const userList = fetchUser();
+    const matchedUser = userList.users.applicants.find((applicant) => {
+        return applicant.email === user.email && applicant.password === user.password;
+    });
+
+    return matchedUser;
+}
+
+module.exports = {
     fetchUser,
-    register
- }
+    register,
+    login
+}
