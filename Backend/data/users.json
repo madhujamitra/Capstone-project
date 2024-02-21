@@ -1,0 +1,26 @@
+{
+  "users": {
+    "applicants": [
+      {
+        "email": "applicantEmail@example.com",
+        "name": "Applicant Full Name",
+        "password": "applicantPassword"
+      },
+      {
+        "email": "madhuja@example.com",
+        "name": "Applicant Full Name",
+        "password": "applicantPassword"
+      },
+      {
+        "email": "madhuja@example.com",
+        "name": "Applicant Full Name",
+        "password": "applicantPassword"
+      }
+    ],
+    "recruiter": {
+      "email": "madhujamitra@gmail.com",
+      "name": "Madhuja Mitra",
+      "password": "Start123"
+    }
+  }
+}
