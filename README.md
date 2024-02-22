@@ -154,7 +154,27 @@ Response:
 - Get applications for a specific job posting.
 
 Parameters:
-- id: Café id
+- id:  id
+- token: JWT of the logged in user
+
+Response:
+```
+[    {   "applicantId": 123,
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "applicationDate": "2024-02-17",
+        "status": "pending"   
+         },
+            ...]
+
+```
+
+**PUT /jobs/:id/applications**
+
+- updating the application list by removing the rejected candidate.
+
+Parameters:
+- id:  id
 - token: JWT of the logged in user
 
 Response:
