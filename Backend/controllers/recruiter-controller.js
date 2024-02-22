@@ -24,7 +24,7 @@ const postJob = (newJob) => {
     const newId = Math.max(...Object.keys(joblist.jobs).map(id => parseInt(id))) + 1;
     joblist.jobs[newId.toString()] = newJob;
     fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
-    console.log(joblist);
+    
     return joblist;
 
 }
@@ -36,11 +36,54 @@ const applicationList = (jobId) => {
     return joblist.jobs[jobId].applications;
 }
 
+const applicationsRejected = (user, jobId, Status) => {
+    const joblist = jobList();
+    
+
+    const job = joblist.jobs[jobId];
+    if (job) {
+        job.applications.forEach(application => {
+            if (application.applicantId === user.applicantId) {
+                application.applicationStatus = Status;
+                console.log(application.applicationStatus  , "status");
+            }
+        });
+    }
+   console.log(job.applications);
+    fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
+    return joblist.jobs[jobId].applications;
+}
+
+
+const reactivate = (jobId) =>{
+    const joblist = jobList();
+    const job = joblist.jobs[jobId];
+    if (job) {
+        const allRejected = job.applications.every(application => application.applicationStatus === "Rejected");
+        if (allRejected) {
+            joblist.jobs[jobId].applications = [];
+            fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
+            return { message: "All applications rejected. Job reactivated with no applications.", applications: joblist.jobs[jobId].applications };
+        } else {
+            return { message: "Not all applications are rejected. Please recheck.", applications: joblist.jobs[jobId].applications };
+        }
+    } else {
+        return { message: "Job not found." };
+    }
+    
+    fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
+    console.log("joblist.jobs[jobId].applications", joblist.jobs[jobId].applications);
+    return joblist.jobs[jobId].applications;
+
+}
+
 module.exports = {
     login,
     postJob,
     jobList,
     fetchUser,
-    applicationList
+    applicationList,
+    applicationsRejected,
+    reactivate
    
 }

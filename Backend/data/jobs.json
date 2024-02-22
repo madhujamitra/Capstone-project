@@ -11,21 +11,7 @@
       "location": "New York, NY",
       "industry": "Technology",
       "status": "closed",
-      "applications": [
-        {
-          "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
-        },
-        {
-          "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
-        },
-        {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
-          "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
-        }
-      ]
+      "applications": []
     },
     "2": {
       "title": "Data Analyst",
