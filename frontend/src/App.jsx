@@ -1,19 +1,22 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Components/Header/Header'
+import HeaderRecruitor from './Components/Header/HeaderRecruitor'
 // import Login from './Components/Login/Login'
 //import Registration from './Components/Registration/Registration'
-import UserValidation from './Components/UserValidation/UserValidation';
+//import UserValidation from './Components/UserValidation/UserValidation';
+import Newjob from './Components/Newjob/Newjob';
+
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Header/>
+      <HeaderRecruitor/>
       {/* <Login/> */}
    {/* <Registration/> */}
    {/* <JobList/> */}
-   <UserValidation/>
+   {/* <UserValidation/> */}
+   <Newjob/>
 
     <Routes>
     <Route path="/" element="" />;

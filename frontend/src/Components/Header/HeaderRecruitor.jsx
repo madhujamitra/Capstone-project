@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Logo from "../../Assets/Images/logo.svg";
 
-export default function Header() {
+export default function HeaderRecruitor() {
   const [activeLink, setActiveLink] = useState("");
   const updateActiveLink = (linkName) => {
     setActiveLink(linkName);
   };
   useEffect(() => {
-    setActiveLink("Applicant");
+    setActiveLink("JobList");
   }, []);
 
   return (
     <header className={`header ${"header-outside"}`}>
       <div className="header__container">
         <nav className="header__logo-container">
-          <Link to={`/Applicant`} onClick={() => updateActiveLink("Applicant")}>
+          <Link to={`recruitor/JobList`} onClick={() => updateActiveLink("JobList")}>
             <span className="header__logo">
               <img src={Logo} alt="Logo" />
             </span>
@@ -27,33 +27,33 @@ export default function Header() {
           
           <div
             className={`header__state ${
-              activeLink === "Applicant"
+              activeLink === "JobList"
                 ? "header__active-nav-item"
                 : "header__nav-link--inactive"
             }`}
           >
             <Link
-              to={`/Applicant`}
-              onClick={() => updateActiveLink("Applicant")}
+              to={`recruitor/JobList`}
+              onClick={() => updateActiveLink("JobList")}
               className="text-decor"
             >
-              <h3 className="header__nav-link">Applicant</h3>
+              <h3 className="header__nav-link">JobList</h3>
             </Link>
           </div>
 
           <div
             className={`header__state ${
-              activeLink === "Recruitor"
+              activeLink === "NewJob"
                 ? "header__active-nav-item"
                 : "header__nav-link--inactive"
             }`}
           >
             <Link
-              to={`/Recruitor`}
-              onClick={() => updateActiveLink("Recruitor")}
+              to={`recruitor/NewJob`}
+              onClick={() => updateActiveLink("NewJob")}
               className="text-decor"
             >
-              <h3 className="header__nav-link">Recruitor</h3>
+              <h3 className="header__nav-link">NewJob</h3>
             </Link>
           </div>
         </nav>
