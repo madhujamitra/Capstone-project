@@ -1,0 +1,121 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $main-typeface;
+    font-weight: 400;
+    margin: 0;
+    color: $hireSwift-black;
+    background-color: $light-grey;
+}
+
+p {
+    margin: 0;
+}
+
+// HEADERS
+
+h1, h2, h3, h4 {
+    font-family: $main-typeface;
+    font-weight: 600;
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.75rem;
+
+    @include tablet {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    font-size: 1.25rem;
+
+    @include tablet {
+        font-size: 1.5rem;
+    }
+}
+
+h3 {
+    font-size: 0.813rem;
+
+    @include tablet {
+        font-size: 0.875rem;
+    }
+}
+
+h4 {
+    font-size: 0.688rem;
+    text-transform: uppercase;
+    color: $slate;
+
+    @include tablet {
+        font-size: 0.75rem;
+    }
+}
+
+// BUTTONS AND INPUT
+
+button {
+    height: 2.25rem;
+    padding: 0 1rem;
+    width: 100%;
+    border-radius: 20px;
+    border-style: none;
+    font-family: $main-typeface;
+
+    @include tablet {
+        height: 2.375rem;
+        width: fit-content;
+    }
+}
+
+input {
+    border-radius: 20px;
+    color: $slate;
+    font-family: $main-typeface;
+    height: 2.25rem;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid $cloud;
+
+    @include tablet {
+        height: 2.375rem;
+    }
+}
+
+// BODY LARGE
+.p1 {
+    font-size: 1rem;
+
+    @include tablet {
+        font-size: 0.938rem;
+    }
+}
+
+// BODY MEDIUM
+.p2 {
+    font-size: 0.875rem;
+
+    @include tablet {
+        font-size: 0.813rem;
+    }
+}
+
+// BODY SMALL
+.p3 {
+    font-size: 0.75rem;
+
+    @include tablet {
+        font-size: 0.688rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}

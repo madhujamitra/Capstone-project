@@ -1,0 +1,20 @@
+pages : recruitor => 
+page 1
+/login
+page 2 => /jobs-posting
+/Post = /jobs (new job)
+page 3 =>/jobs-validation
+/Get =  /jobs/:jobId/application ( one page for loading  )
+/put = /jobs/:jobId/application (status update)
+page 4
+/put = /jobs/:jobId/reactivate 
+
+pages : applicant => 
+page 1
+/register
+page 2
+'/login'
+Page 3
+/jobs
+/jobs/apply/:id
+

@@ -1,0 +1,42 @@
+@use './typography' as *;
+
+// MAIN TYPEFACE
+
+$main-typeface: "Titillium Web", Arial, Helvetica, sans-serif;
+
+
+// COLOURS
+
+// PRIMARY
+$hireSwift-black: #13182C;
+$hireSwift-indigo: #2E66E5;
+$white: #FFFFFF;
+
+// SECONDARY
+$slate: #5C667E;
+$cloud: #BDC5D5;
+
+// BACKGROUND
+$yellow: #F0DC28;
+$light-grey: #F7F8F9;
+
+// SUPPORTING
+$green: #7DE8BF;
+$red: #C94515;
+
+
+// MEDIA QUERIES
+
+$tablet-breakpoint: 47.938rem; /* 767px */
+$desktop-breakpoint: 80rem; /* 1280px */
+
+
+// MARGINS
+
+$mobile-margin: 0 1rem;
+$tablet-margin: 0 2rem;
+$desktop-margin: 0 auto;
+
+//Other styles
+$divider: 1px solid $cloud;
+$border-radius: 1.25rem;

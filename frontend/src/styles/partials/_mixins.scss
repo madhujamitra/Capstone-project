@@ -1,0 +1,15 @@
+@use './variables' as *;
+
+// BREAKPOINTS
+
+@mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+  }

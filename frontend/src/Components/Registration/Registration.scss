@@ -1,0 +1,106 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.Registration {
+    background-color: $light-grey;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__card {
+
+        flex: 1 1 0%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &__or{
+            padding-top: 28px;
+            // display: flex;
+            // align-items: center;
+        
+        }
+    //     &__or:before{
+    //         content: "";
+    // display: block;
+    // background-color: rgb(165, 165, 165);
+    // flex: 1 1 0%;
+    // height: 2px;
+
+        
+    //     }
+    //     &__or:after{
+    //         content: "";
+    // display: block;
+    // background-color: rgb(165, 165, 165);
+    // flex: 1 1 0%;
+    // height: 2px;
+
+        
+    //     }
+        &__middle{
+       color: $slate;
+        }
+    }
+
+    &__form {
+
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        max-width: 390px;
+        margin: 0px auto;
+        width: 100%;
+        padding: 2.27rem 1rem 1rem;
+    }
+    &__title {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: $hireSwift-black;
+    }
+
+    &__field {
+        margin-bottom: 1rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: $slate;
+        font-weight: 600;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid $cloud;
+        border-radius: 4px;
+        box-sizing: border-box;
+        &:focus {
+            border: 2px solid $hireSwift-black;
+            outline: none;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 4px;
+        background-color: $yellow;
+        color: $hireSwift-black;
+        border-radius: $border-radius;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+            border: 4px solid $hireSwift-black;
+        }
+    }
+}
+
+

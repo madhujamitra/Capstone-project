@@ -1,0 +1,117 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.job {
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: $light-grey;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding: 2rem 1rem;
+
+    @include tablet {
+        padding: 1.5rem 2.5rem;
+        
+    }
+
+    &__card {
+        display: flex;
+        height: fit-content;
+        -webkit-box-pack: center;
+        justify-content: center;
+        transition: height 0.1s ease-in-out 0s;
+        width: 100%;
+        
+
+
+
+        &-background {
+            max-width: 64rem;
+            width: 100%;
+            border-radius: 0.75rem;
+            background-color: white;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-left: 4px solid $red;
+        }
+
+        &-inner{
+            display: flex;
+            -webkit-box-pack: justify;
+            //justify-content: space-between;
+            max-width: 64rem;
+            padding: 0 1.5rem;
+            gap: 1.5rem;
+            padding-bottom: 10px;
+
+        }
+        &-button{
+            //border: 2px solid $hireSwift-black;
+            border-radius: $border-radius;
+            background-color: $yellow;
+            padding: 0.5rem 1.5rem;
+            border:none;
+           
+    
+            @include tablet {
+                padding: 0.5rem 1.5rem;
+                
+            }
+            &:hover{
+                border: 2px solid $hireSwift-black;
+            }
+        }
+                &-side-left {
+                    text-align: left;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+                &-side-right {
+                    text-align: left;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 10px;
+                }
+
+    }
+
+    &__icon{
+        height: 24px;
+        width: 24px;
+    }
+    &__icon-group{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    }
+    &__skills{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        text-decoration: none;
+        padding-left: 0px;
+        list-style-type: none;
+        margin: 0px;
+        flex-wrap: wrap;
+
+    }
+    &__small-card{
+        background:$green;
+    padding: 0.34rem 0.5rem;
+    width: fit-content;
+    border-radius: 10px;
+    }
+    &__divider{
+        border-right: 2px solid $cloud;
+    }
+
+}
