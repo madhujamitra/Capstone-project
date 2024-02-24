@@ -1,0 +1,169 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+
+.newjob {
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: $light-grey;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding: 2rem 1rem;
+    background: 
+  -webkit-linear-gradient($light-grey, rgba(135, 60, 255, 0.0) 0%),
+ -webkit-linear-gradient(-55deg, $light-grey 75%, $yellow 0%);
+
+    @include tablet {
+        padding: 1.5rem 2.5rem;
+        
+    }
+    &__second-title{
+        color: $cloud;
+    }
+    &__heading{
+        color: $hireSwift-black;
+        padding-bottom: 12px;
+    }
+    &__label{
+        width: 25%;
+        font-weight: 700;
+    }
+
+    &__expanded-card{
+        width:60%;
+        padding-top:48px;
+        padding-bottom:65px;
+    }
+
+    &__card {
+        display: flex;
+        height: fit-content;
+        -webkit-box-pack: center;
+        justify-content: center;
+        transition: height 0.1s ease-in-out 0s;
+        width: 100%;
+        
+
+
+
+        &-background {
+            max-width: 64rem;
+            width: 100%;
+            border-radius: 0.75rem;
+            background-color: white;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-left: 4px solid $green;
+        }
+
+        &-inner{
+            display: flex;
+            -webkit-box-pack: justify;
+            //justify-content: space-between;
+            max-width: 64rem;
+            padding: 0 1.5rem;
+            gap: 1.5rem;
+            padding-bottom: 10px;
+
+        }
+        &-button{
+            //border: 2px solid $hireSwift-black;
+            border-radius: $border-radius;
+            background-color: $yellow;
+            padding: 0.5rem 1.5rem;
+            border:none;
+           
+    
+            @include tablet {
+                padding: 0.5rem 1.5rem;
+                
+            }
+            &:hover{
+                border: 2px solid $hireSwift-black;
+            }
+            &-delete{
+                background-color: $light-grey; 
+            }
+        }
+                &-side {
+                    text-align: left;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                }
+               
+
+    }
+
+    &__icon{
+        height: 24px;
+        width: 24px;
+    }
+    &__icon-group{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    }
+    &__skills{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        text-decoration: none;
+        padding-left: 0px;
+        list-style-type: none;
+        margin: 0px;
+        flex-wrap: wrap;
+
+    }
+    &__small-card{
+        background:$green;
+    padding: 0.34rem 0.5rem;
+    width: fit-content;
+    border-radius: 10px;
+    }
+    &__divider{
+        border-right: 2px solid $cloud;
+    }
+    &__input{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 0.626rem;
+        border: 0.063rem solid #E1E1E1;
+        outline-color: #323232;
+        border-radius: 0.25rem;
+        background: #FAFAFA;
+    }
+
+}
+
+.button{
+&-aligment{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:24px;
+    padding-bottom: 24px;
+    
+}
+&-left{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding-left:1.5rem
+
+
+}
+&-right{
+    padding-right: 1.5rem;
+}
+
+
+}
+

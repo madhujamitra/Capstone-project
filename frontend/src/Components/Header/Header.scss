@@ -75,6 +75,8 @@
        
         &:hover {
             text-decoration: underline;
+          
+           
         }
     }
 
@@ -85,6 +87,7 @@
         justify-content: center;
         border-radius: $border-radius;
         width: 50%;
+
     }
 
     &__extender {

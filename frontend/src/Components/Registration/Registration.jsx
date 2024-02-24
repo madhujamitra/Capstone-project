@@ -13,6 +13,14 @@ const Registration = () => {
                     <input type="text" id="name" className="Registration__input" placeholder="Enter your Name" />
                 </div>
                 <div className="Registration__field">
+                    <label className="Registration__label" htmlFor="Skill">Skill</label>
+                    <input type="Skill" id="Skill" className="Registration__input" placeholder="Enter your password" />
+                </div>
+                <div className="Registration__field">
+                    <label className="Registration__label" htmlFor="expreince">Year of expreince</label>
+                    <input type="expreince" id="expreince" className="Registration__input" placeholder="Enter your password" />
+                </div>
+                <div className="Registration__field">
                     <label className="Registration__label" htmlFor="email">Email</label>
                     <input type="email" id="email" className="Registration__input" placeholder="Enter your email" />
                 </div>
@@ -20,6 +28,7 @@ const Registration = () => {
                     <label className="Registration__label" htmlFor="password">Password</label>
                     <input type="password" id="password" className="Registration__input" placeholder="Enter your password" />
                 </div>
+
                 
                 <button type="submit" className="Registration__button">Sign up</button>
 

@@ -1,0 +1,24 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.Page__background{
+        background: 
+        -webkit-linear-gradient($light-grey, rgba(135, 60, 255, 0.0) 0%),
+       -webkit-linear-gradient(-55deg, $light-grey 55%, $green 0%);
+       display: flex;
+justify-content: center;
+    //    align-items: center; 
+        min-height: 90vh;
+        
+
+        > div {
+            text-align: left;
+        
+            img {
+                padding-top:150px;
+              max-width: 100%;
+              height: auto;
+              margin: 0 auto; 
+            }
+          }
+    }

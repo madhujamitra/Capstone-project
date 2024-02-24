@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Logo from "../../Assets/Images/logo.svg";
 
-export default function HeaderRecruitor() {
+export default function HeaderApplicant() {
   const [activeLink, setActiveLink] = useState("");
   const updateActiveLink = (linkName) => {
     setActiveLink(linkName);
@@ -16,7 +16,7 @@ export default function HeaderRecruitor() {
     <header className={`header ${"header-outside"}`}>
       <div className="header__container">
         <nav className="header__logo-container">
-          <Link to={`recruitor/JobList`} onClick={() => updateActiveLink("JobList")}>
+          <Link to={`/applicant/jobs-page`} >
             <span className="header__logo">
               <img src={Logo} alt="Logo" />
             </span>
@@ -24,25 +24,7 @@ export default function HeaderRecruitor() {
         </nav>
 
         <nav className="header__nav-bar">
-          
-          
-
-          <div
-            className={`header__state ${
-              activeLink === "NewJob"
-                ? "header__active-nav-item"
-                : "header__nav-link--inactive"
-            }`}
-          >
-            <Link
-              to={`/recruitor/NewJob`}
-              onClick={() => updateActiveLink("NewJob")}
-              className="text-decor"
-            >
-              <h3 className="header__nav-link">NewJob</h3>
-            </Link>
-          </div>
-          <div
+        <div
             className={`header__state ${
               activeLink === "Logout"
                 ? "header__active-nav-item"
@@ -57,6 +39,7 @@ export default function HeaderRecruitor() {
               <h3 className="header__nav-link">Logout</h3>
             </Link>
           </div>
+          
         </nav>
       </div>
     </header>

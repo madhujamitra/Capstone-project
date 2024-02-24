@@ -3,12 +3,28 @@ import ApplicationList from '../ApplicationList/ApplicationList'
 import Skill from "../../Assets/Images/icon/tool.svg";
 import Industry from "../../Assets/Images/icon/industry.svg";
 import Location from "../../Assets/Images/icon/location.svg";
-import Role from "../../Assets/Images/icon/tool.svg";
 import Description from "../../Assets/Images/icon/description.svg";
-import pen from "../../Assets/Images/icon/pen.svg";
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import DialogTitle from '@mui/material/DialogTitle';
+import Button from '@mui/material/Button';
+import { useState } from "react";
+
 
 
 export default function UserValidation() {
+
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <>
       <section className="userv">
@@ -66,7 +82,27 @@ export default function UserValidation() {
                   </button>
                 </div>
                 <div className="button-right">
-                  <button className="userv__card-button"> Re-activate </button>
+                  <button className="userv__card-button" onClick={handleClickOpen} > Re-activate </button>
+                  <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="alert-dialog-title"
+        aria-describedby="alert-dialog-description"
+      >
+        <DialogTitle id="alert-dialog-title">{"Use Google's location service?"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText id="alert-dialog-description">
+            Let Google help apps determine location. This means sending anonymous location data to
+            Google, even when no apps are running.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+         
+          <Button onClick={handleClose} autoFocus>
+            ok
+          </Button>
+        </DialogActions>
+      </Dialog>
                 </div>
               </div>
             </div>

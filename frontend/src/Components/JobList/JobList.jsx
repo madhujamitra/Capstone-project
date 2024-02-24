@@ -2,9 +2,7 @@ import "../JobList/JobList.scss";
 import Skill from "../../Assets/Images/icon/tool.svg";
 import Industry from "../../Assets/Images/icon/industry.svg";
 import Location from "../../Assets/Images/icon/location.svg";
-import Role from "../../Assets/Images/icon/tool.svg";
 import Description from "../../Assets/Images/icon/description.svg";
-import pen from "../../Assets/Images/icon/pen.svg";
 
 
 export default function JobList() {

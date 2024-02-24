@@ -2,10 +2,13 @@
 @use '../../styles/partials/mixins' as *;
 
 .Registration {
-    background-color: $light-grey;
+    // background-color: $light-grey;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background: 
+    -webkit-linear-gradient($light-grey, rgba(135, 60, 255, 0.0) 0%),
+   -webkit-linear-gradient(-55deg, $light-grey 75%, $green 0%);
 
     &__card {
 
