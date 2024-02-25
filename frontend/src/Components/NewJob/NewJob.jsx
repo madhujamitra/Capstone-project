@@ -19,7 +19,7 @@ export default function NewJob() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+
   };
 
   return (

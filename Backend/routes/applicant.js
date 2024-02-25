@@ -65,7 +65,9 @@ router.route('/jobs/apply/:id').post((req, res) => {
   const user = {
     applicantId,
     email,
-    name
+    name,
+    // skill,
+    // year
   }
   
   try {

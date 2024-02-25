@@ -5,8 +5,15 @@ const { v4: uuidv4 } = require('uuid');
 
 const {  login ,fetchUser,jobList,reactivate, postJob, applicationList, applicationsRejected } = require('../controllers/recruiter-controller')
 
-router.get('/', (req, res) => {
-  res.send('Recruiter route is working!');
+router.get('/jobs', (req, res) => {
+
+  const joblist = jobList()
+ try{
+ console.log(joblist);
+  return res.status(200).json(joblist);
+ }catch(error){
+  return res.status(401).json({ error: "Invalid list" });
+ }
 });
 
 router.route('/login').post((req, res) => {

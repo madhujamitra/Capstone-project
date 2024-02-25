@@ -2,6 +2,8 @@ import React from 'react';
 import './Login.scss'; 
 
 const Login = () => {
+
+    
     return (
         <div className="login">
         <div className="login__card">
@@ -25,7 +27,7 @@ const Login = () => {
             </div>
             
             <div>
-                <p>Don't have an account? <a href=""><span>Sign up</span></a></p>
+                <p>Don't have an account? <a href=" "><span>Sign up</span></a></p>
             </div>
             </div>
         </div>

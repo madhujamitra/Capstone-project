@@ -27,7 +27,8 @@
       "applications": [
         {
           "email": "applicantEmail2@example.com",
-          "name": "Applicant Full Name 2"
+          "name": "Applicant Full Name 2",
+          "applicationStatus": "Pending"
         }
       ]
     },
@@ -41,32 +42,38 @@
       ],
       "location": "Remote",
       "industry": "Design",
-      "status": "closed",
+      "status": "open",
       "applications": [
         {
           "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
+          "name": "Applicant Full Name", 
+          "applicationStatus": "Pending"
+
         },
         {
           "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
+          "name": "Applicant Full Name",
+          "applicationStatus": "Pending"
         },
         {
           "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
+          "name": "Applicant Full Name",
+          "applicationStatus": "Pending"
         },
         {
           "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
+          "name": "Applicant Full Name",
+          "applicationStatus": "Pending"
         },
         {
           "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
+          "name": "Applicant Full Name",
+          "applicationStatus": "Pending"
         }
       ]
     },

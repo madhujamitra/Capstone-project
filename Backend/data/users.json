@@ -5,7 +5,13 @@
         "id": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
         "email": "applicantEmail@example.com",
         "name": "Applicant Full Name",
-        "password": "applicantPassword"
+        "password": "applicantPassword",
+        "skills": [
+          "SQL",
+          "Python",
+          "Data Analysis"
+        ],
+        "yearOfExperience": 5
       }
     ],
     "recruiter": {
