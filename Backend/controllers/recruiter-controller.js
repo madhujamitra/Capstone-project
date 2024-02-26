@@ -32,7 +32,7 @@ const postJob = (newJob) => {
 const applicationList = (jobId) => {
 
     const joblist = jobList();
-    console.log(joblist.jobs[jobId].applications);
+   
     return joblist.jobs[jobId].applications;
 }
 
@@ -45,11 +45,11 @@ const applicationsRejected = (user, jobId, Status) => {
         job.applications.forEach(application => {
             if (application.applicantId === user.applicantId) {
                 application.applicationStatus = Status;
-                console.log(application.applicationStatus  , "status");
+              
             }
         });
     }
-   console.log(job.applications);
+  
     fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
     return joblist.jobs[jobId].applications;
 }
@@ -62,6 +62,7 @@ const reactivate = (jobId) =>{
         const allRejected = job.applications.every(application => application.applicationStatus === "Rejected");
         if (allRejected) {
             joblist.jobs[jobId].applications = [];
+            joblist.jobs[jobId].status = "open"
             fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
             return { message: "All applications rejected. Job reactivated with no applications.", applications: joblist.jobs[jobId].applications };
         } else {
@@ -72,7 +73,7 @@ const reactivate = (jobId) =>{
     }
     
     fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
-    console.log("joblist.jobs[jobId].applications", joblist.jobs[jobId].applications);
+   // console.log("joblist.jobs[jobId].applications", joblist.jobs[jobId].applications);
     return joblist.jobs[jobId].applications;
 
 }

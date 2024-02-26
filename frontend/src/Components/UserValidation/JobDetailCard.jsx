@@ -5,15 +5,17 @@ import Description from "../../Assets/Images/icon/description.svg";
 import DialogBox from "./DialogBox";
 import ApplicationList from "../ApplicationList/ApplicationList";
 import { useState } from "react";
+import axios from 'axios';
 
 export default function JobCardDetail({
   job,
-  jobId,
-  handleClickOpen,
-  handleClose,
-  open,
+  jobId
+
 }) {
   const [List, setList] = useState(false);
+  const [open, setOpen] = useState(false);
+const [output, setoutput] = useState(null);
+
   const handleListOpen = () => {
     setList(true);
   };
@@ -23,6 +25,34 @@ export default function JobCardDetail({
       setList(false);
     }
   };
+
+ 
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const performOperation = async () => {
+    const url = `http://localhost:8080/api/Recruiter/jobs/${jobId}/reactivate`;
+   
+    try {
+      console.log("2");
+      const response = await axios.put(url);
+     console.log(response.data);
+     
+      setoutput(response.data);
+      setOpen(true);
+    } catch (error) {
+      console.error('Failed to perform operation:', error);
+      
+    }
+  };
+
+   const handleClickOpen = () => {
+    performOperation();
+    
+  };
+
 
   return (
     <>
@@ -57,7 +87,7 @@ export default function JobCardDetail({
               </div>
 
               <div className="userv__icon-group">
-                <img src={Location} className="userv__icon" alt="Skill" />
+                <img src={Location} className="userv__icon" alt="location" />
                 <span>{job.location}</span>
               </div>
               <div className="userv__icon-group">
@@ -69,18 +99,17 @@ export default function JobCardDetail({
           <div className="button-aligment">
             <div className="button-left">
               <button className="userv__card-button" onClick={handleListOpen}>
-                {" "}
-                Applicants{" "}
+                Applicants
               </button>
               <button className="userv__card-button userv__card-button-delete">
                 Delete
               </button>
             </div>
             <div className="button-right">
-              <button className="userv__card-button" onClick={handleClickOpen}>
+              <button className="userv__card-button" onClick={handleClickOpen} >
                 Re-activate
               </button>
-              <DialogBox open={open} handleClose={handleClose} />
+              <DialogBox open={open} handleClose={handleClose}  output={output} jobId= {jobId}/>
             </div>
           </div>
         </div>

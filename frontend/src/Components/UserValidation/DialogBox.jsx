@@ -6,31 +6,36 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
 
 
-export default function DialogBox({open,handleClose}){
 
-    return(
-        <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle>
+export default function DialogBox({open,handleClose,  output}){
+
+
+
+
+
+return (
+  <Dialog
+    open={open}
+    onClose={handleClose}
+    aria-labelledby="alert-dialog-title"
+    aria-describedby="alert-dialog-description"
+  >
+    {output ? (
+      <>
+        <DialogTitle id="alert-dialog-title">Title</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means
-            sending anonymous location data to Google, even when no
-            apps are running.
+            {output.message}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} autoFocus>
-            ok
+            OK
           </Button>
         </DialogActions>
-      </Dialog>
-    )
+      </>
+    ) : null}
+  </Dialog>
+);
 
 }

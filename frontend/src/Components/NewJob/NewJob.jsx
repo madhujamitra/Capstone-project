@@ -1,7 +1,10 @@
 import "../NewJob/NewJob.scss";
 import React, { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export default function NewJob() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     description: "",
@@ -11,15 +14,42 @@ export default function NewJob() {
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    if (name === "skills") {
+      
+      const skillsArray = value.split(",").map(skill => skill.trim());
+      setFormData({
+        ...formData,
+        [name]: skillsArray,
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+   const updatedItem = {
+    title: formData.name,
+    description: formData.description,
+    skills: formData.skills,
+    location: formData.location,
+    industry: formData.industry,
+    
+   }
+    try {
+      const response = await axios.post(`http://localhost:8080/api/Recruiter/jobs`,updatedItem);
+     
+  } catch(error) {
+      alert("Error:", error)
+  }
+  handleBackClick();
+  };
 
+  const handleBackClick = () => {
+    navigate("/recruitor/jobs-validation");
   };
 
   return (
@@ -58,7 +88,7 @@ export default function NewJob() {
 
                 <div className="newjob__icon-group">
                   <label htmlFor="skills" className="newjob__label">
-                    Skills{" "}
+                    Skills
                     <span className="newjob__second-title">
                       (comma-separated)
                     </span>
@@ -92,7 +122,7 @@ export default function NewJob() {
                     Industry:
                   </label>
                   <input
-                    for="industry"
+                    id="industry"
                     type="text"
                     className="newjob__input"
                     name="industry"
@@ -104,7 +134,7 @@ export default function NewJob() {
             </div>
             <div className="button-aligment">
               <div className="button-left">
-                <button className="newjob__card-button newjob__card-button-delete">
+                <button className="newjob__card-button newjob__card-button-delete" onClick={handleBackClick}>
                   Back
                 </button>
               </div>

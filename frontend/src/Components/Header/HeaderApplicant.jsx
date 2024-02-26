@@ -6,6 +6,9 @@ import Logo from "../../Assets/Images/logo.svg";
 export default function HeaderApplicant() {
   const [activeLink, setActiveLink] = useState("");
   const updateActiveLink = (linkName) => {
+    sessionStorage.removeItem('id');
+    sessionStorage.removeItem('name');
+    sessionStorage.removeItem('email');
     setActiveLink(linkName);
   };
   useEffect(() => {

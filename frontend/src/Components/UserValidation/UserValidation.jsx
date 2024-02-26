@@ -1,23 +1,11 @@
 import "../UserValidation/UserValidation.scss";
 import JobDetailCard from './JobDetailCard'
-import { useState } from "react";
-const { v4: uuidv4 } = require('uuid');
+
+
 
 
 export default function UserValidation({ActiveJobList}) {
   
-
-  const [open, setOpen] = useState(false);
-  const [List, setList] = useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
 
  
   return (
@@ -34,10 +22,6 @@ export default function UserValidation({ActiveJobList}) {
       jobId={jobId}
       job={jobDetails}
 
-      handleClickOpen={handleClickOpen}
-      handleClose={handleClose}
-      open={open}
-      List={List}
     />
   ))
 ) : (

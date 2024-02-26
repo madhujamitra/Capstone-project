@@ -12,12 +12,49 @@
           "Data Analysis"
         ],
         "yearOfExperience": 5
+      },
+      {
+        "id": "a34f7186-78b4-4a06-8b91-38e41b58ca91",
+        "email": "applicantEmail@example.com",
+        "name": "Pinky",
+        "password": "Start123",
+        "skills": [
+          "SQL",
+          "Python",
+          "Data Analysis"
+        ],
+        "yearOfExperience": 5
+      },
+      {
+        "id": "87c73fbb-e243-433b-9be9-5e9158da24a6",
+        "sessionId": "4159f88b-1919-421f-99a7-aa3167cd41e5",
+        "email": "sdf@gmail.com",
+        "name": "df",
+        "password": "sdf",
+        "skills": [
+          "dsfsd" 
+        ],
+        "yearOfExperience": 5
+      },
+      {
+        "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+        "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+        "email": "sdf@gmail.com",
+        "name": "sushmita",
+        "password": "Start123",
+        "skill": [
+          "talking",
+          "eating"
+        ],
+        "yearOfExperience": 5
       }
     ],
     "recruiter": {
+      "id": "b38c4e86-03d3-4188-a14d-69cf65b0c36b",
       "email": "madhujamitra@gmail.com",
       "name": "Madhuja Mitra",
-      "password": "Start123"
+      "password": "Start123",
+      "sessionId": "b38c4e86-03d3-4188-a14d-69cf65b0c36a"
     }
   }
 }

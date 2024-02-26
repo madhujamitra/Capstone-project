@@ -23,12 +23,62 @@
       ],
       "location": "San Francisco, CA",
       "industry": "Data Science",
-      "status": "open",
+      "status": "closed",
       "applications": [
         {
-          "email": "applicantEmail2@example.com",
-          "name": "Applicant Full Name 2",
-          "applicationStatus": "Pending"
+          "id": "87c73fbb-e243-433b-9be9-5e9158da24a6",
+          "sessionId": "4159f88b-1919-421f-99a7-aa3167cd41e5",
+          "email": "sdf@gmail.com",
+          "name": "df",
+          "password": "sdf",
+          "skills": [
+            "dsfsd"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "87c73fbb-e243-433b-9be9-5e9158da24a6",
+          "sessionId": "4159f88b-1919-421f-99a7-aa3167cd41e5",
+          "email": "sdf@gmail.com",
+          "name": "df",
+          "password": "sdf",
+          "skills": [
+            "dsfsd"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "87c73fbb-e243-433b-9be9-5e9158da24a6",
+          "sessionId": "4159f88b-1919-421f-99a7-aa3167cd41e5",
+          "email": "sdf@gmail.com",
+          "name": "df",
+          "password": "sdf",
+          "skills": [
+            "dsfsd"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "87c73fbb-e243-433b-9be9-5e9158da24a6",
+          "sessionId": "4159f88b-1919-421f-99a7-aa3167cd41e5",
+          "email": "sdf@gmail.com",
+          "name": "df",
+          "password": "sdf",
+          "skills": [
+            "dsfsd"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "87c73fbb-e243-433b-9be9-5e9158da24a6",
+          "sessionId": "4159f88b-1919-421f-99a7-aa3167cd41e5",
+          "email": "sdf@gmail.com",
+          "name": "df",
+          "password": "sdf",
+          "skills": [
+            "dsfsd"
+          ],
+          "yearOfExperience": 5
         }
       ]
     },
@@ -42,38 +92,72 @@
       ],
       "location": "Remote",
       "industry": "Design",
-      "status": "open",
+      "status": "closed",
       "applications": [
         {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
+          "id": "a34f7186-78b4-4a06-8b91-38e41b58ca91",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name", 
-          "applicationStatus": "Pending"
-
+          "name": "Pinky",
+          "password": "Start123",
+          "skills": [
+            "SQL",
+            "Python",
+            "Data Analysis"
+          ],
+          "yearOfExperience": 5,
+          "applicationStatus": "In Interview"
         },
         {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
+          "id": "a34f7186-78b4-4a06-8b91-38e41b58ca91",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name",
-          "applicationStatus": "Pending"
+          "name": "Pinky",
+          "password": "Start123",
+          "skills": [
+            "SQL",
+            "Python",
+            "Data Analysis"
+          ],
+          "yearOfExperience": 5,
+          "applicationStatus": "In Interview"
         },
         {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
+          "id": "a34f7186-78b4-4a06-8b91-38e41b58ca91",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name",
-          "applicationStatus": "Pending"
+          "name": "Pinky",
+          "password": "Start123",
+          "skills": [
+            "SQL",
+            "Python",
+            "Data Analysis"
+          ],
+          "yearOfExperience": 5,
+          "applicationStatus": "In Interview"
         },
         {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
+          "id": "a34f7186-78b4-4a06-8b91-38e41b58ca91",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name",
-          "applicationStatus": "Pending"
+          "name": "Pinky",
+          "password": "Start123",
+          "skills": [
+            "SQL",
+            "Python",
+            "Data Analysis"
+          ],
+          "yearOfExperience": 5,
+          "applicationStatus": "In Interview"
         },
         {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
+          "id": "a34f7186-78b4-4a06-8b91-38e41b58ca91",
           "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name",
-          "applicationStatus": "Pending"
+          "name": "Pinky",
+          "password": "Start123",
+          "skills": [
+            "SQL",
+            "Python",
+            "Data Analysis"
+          ],
+          "yearOfExperience": 5,
+          "applicationStatus": "In Interview"
         }
       ]
     },
@@ -87,8 +171,69 @@
       ],
       "location": "San Francisco, CA",
       "industry": "Data Science",
-      "status": "open",
-      "applications": []
+      "status": "closed",
+      "applications": [
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        }
+      ]
     },
     "5": {
       "title": "Data Analyst",
@@ -113,8 +258,69 @@
       ],
       "location": "San Francisco, CA",
       "industry": "Data Science",
-      "status": "open",
-      "applications": []
+      "status": "closed",
+      "applications": [
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        },
+        {
+          "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
+          "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
+          "email": "sdf@gmail.com",
+          "name": "sushmita",
+          "password": "Start123",
+          "skills": [
+            "talking",
+            "eating"
+          ],
+          "yearOfExperience": 5
+        }
+      ]
     },
     "7": {
       "title": "Data Analyst",
@@ -204,6 +410,45 @@
       ],
       "location": "San Francisco, CA",
       "industry": "Data Science",
+      "status": "open",
+      "applications": []
+    },
+    "14": {
+      "title": "Madhuja",
+      "description": "I am very good girl",
+      "skills": [
+        "happy",
+        "angry",
+        "hangry"
+      ],
+      "location": "india",
+      "industry": "talking",
+      "status": "open",
+      "applications": []
+    },
+    "15": {
+      "title": "Vineet",
+      "description": "asdasddssd",
+      "skills": [
+        "hhs",
+        "dsdds",
+        "ddds",
+        "ddsd"
+      ],
+      "location": "sdsd",
+      "industry": "sdsdfsdfsdfsdfsdfsdfsdfsdf",
+      "status": "open",
+      "applications": []
+    },
+    "16": {
+      "title": "vineet sagar",
+      "description": "dsfsdfsdfsdf",
+      "skills": [
+        "react",
+        "hello"
+      ],
+      "location": "sdfsdf",
+      "industry": "sdfsdfsd",
       "status": "open",
       "applications": []
     }
