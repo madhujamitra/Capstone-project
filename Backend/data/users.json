@@ -2,16 +2,30 @@
   "users": {
     "applicants": [
       {
-        "id": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
-        "email": "applicantEmail@example.com",
-        "name": "Applicant Full Name",
-        "password": "applicantPassword"
+        "id": "f1cb1d5f-7ea6-4fb5-812f-1b919635b2eb",
+        "sessionId": "6e0b3a5c-e210-4d8d-acc7-912d4651b35c",
+        "email": "applicant1@example.com",
+        "name": "John Doe",
+        "password": "password1",
+        "yearOfExperience": "5",
+        "appliedjob": []
+      },
+      {
+        "id": "e6bec843-997e-44cc-a30a-920941b1a4d1",
+        "sessionId": "9baa1c27-bba8-435e-bdf0-8fb71f363558",
+        "email": "applicant2@example.com",
+        "name": "Jane Smith",
+        "password": "password2",
+        "yearOfExperience": "2",
+        "appliedjob": []
       }
     ],
     "recruiter": {
+      "id": "b38c4e86-03d3-4188-a14d-69cf65b0c36b",
       "email": "madhujamitra@gmail.com",
       "name": "Madhuja Mitra",
-      "password": "Start123"
+      "password": "Start123",
+      "sessionId": "b38c4e86-03d3-4188-a14d-69cf65b0c36a"
     }
   }
 }

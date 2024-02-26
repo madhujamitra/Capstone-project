@@ -1,7 +1,8 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
 
-.userv {
+
+.newjob {
 
     display: flex;
     flex-direction: column;
@@ -12,10 +13,30 @@
     padding-top: 32px;
     padding-bottom: 32px;
     padding: 2rem 1rem;
+    background: 
+  -webkit-linear-gradient($light-grey, rgba(135, 60, 255, 0.0) 0%),
+ -webkit-linear-gradient(-55deg, $light-grey 75%, $yellow 0%);
 
     @include tablet {
         padding: 1.5rem 2.5rem;
         
+    }
+    &__second-title{
+        color: $cloud;
+    }
+    &__heading{
+        color: $hireSwift-black;
+        padding-bottom: 12px;
+    }
+    &__label{
+        width: 25%;
+        font-weight: 700;
+    }
+
+    &__expanded-card{
+        width:60%;
+        padding-top:48px;
+        padding-bottom:65px;
     }
 
     &__card {
@@ -25,7 +46,6 @@
         justify-content: center;
         transition: height 0.1s ease-in-out 0s;
         width: 100%;
-        padding-top:1.5rem;
         
 
 
@@ -37,7 +57,7 @@
             background-color: white;
             padding-top: 24px;
             padding-bottom: 24px;
-            border-left: 4px solid $red;
+            border-left: 4px solid $green;
         }
 
         &-inner{
@@ -69,21 +89,14 @@
                 background-color: $light-grey; 
             }
         }
-                &-side-left {
+                &-side {
                     text-align: left;
-                    width: 50%;
+                    width: 100%;
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
                 }
-                &-side-right {
-                    text-align: left;
-                    width: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: 10px;
-                }
+               
 
     }
 
@@ -117,6 +130,15 @@
     &__divider{
         border-right: 2px solid $cloud;
     }
+    &__input{
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 0.626rem;
+        border: 0.063rem solid #E1E1E1;
+        outline-color: #323232;
+        border-radius: 0.25rem;
+        background: #FAFAFA;
+    }
 
 }
 
@@ -125,6 +147,8 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top:24px;
+    padding-bottom: 24px;
     
 }
 &-left{
@@ -139,18 +163,7 @@
 &-right{
     padding-right: 1.5rem;
 }
-}
 
-.job-title{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10%;
-    &-text{
-        color: red;
-    font-size: small;
-    font-weight: bold;
-    text-transform: uppercase;
-    }
+
 }
 

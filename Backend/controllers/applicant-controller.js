@@ -32,22 +32,35 @@ const login = (user) => {
 
 
 const jobApply = (user, jobId) => {
-    
+    console.log(jobId, "jobid")
     const joblist = jobList();
-    
+    const userList = fetchUser();
+   
+    const selectedApplicant = userList.users.applicants.find(applicant => applicant.id === user.applicantId);
     const application = joblist.jobs[jobId].applications;
     const applicationNumber = joblist.jobs[jobId].applications.length;
+const appliedJob = selectedApplicant.appliedjob;
+let output;
 
-    if (applicationNumber < 5) {
-        application.push(user);
+   console.log(selectedApplicant);
+    if (applicationNumber < 5 ) {
+        if(!appliedJob.includes(jobId)){
+        application.push(selectedApplicant);
+        appliedJob.push(jobId)
+        }else{
+            output = "Job already applied";
+            return output;
+        }
     if(applicationNumber+1 === 5){
-       
+        console.log("failed + 1");
         joblist.jobs[jobId].status = "closed";
     }
     } else {
+        console.log("failed 2");
         joblist.jobs[jobId].status = "closed";
     }
     fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2))
+    fs.writeFileSync("./data/users.json", JSON.stringify(userList, null, 2))
 
    return joblist.jobs[jobId];
 

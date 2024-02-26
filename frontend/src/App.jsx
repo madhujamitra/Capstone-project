@@ -1,27 +1,24 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Components/Header/Header'
-// import Login from './Components/Login/Login'
-//import Registration from './Components/Registration/Registration'
-import UserValidation from './Components/UserValidation/UserValidation';
+import PostJob from './Pages/PostJob'
+import LoginPage from './Pages/LoginPage'
+import RegistrationPage from './Pages/RegistrationPage'
+import JobListPage from './Pages/JobListPage'
+import JobValidationPage from './Pages/JobValidationPage'
+import HomePage from './Pages/HomePage'
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Header/>
-      {/* <Login/> */}
-   {/* <Registration/> */}
-   {/* <JobList/> */}
-   <UserValidation/>
-
     <Routes>
-    <Route path="/" element="" />;
-    <Route path="/login" element="login"/>;
-    <Route path="/register" element="register" />;
-    <Route path="/jobs-page" element="jobs-page" />;
-    <Route path="/jobs-posting" element="jobs-posting" />;
-    <Route path="/jobs-validation" element="jobs-validation" />;
+    <Route path="/" element={<HomePage/>}/>;
+    <Route path="/recruitor/login" element={<LoginPage/>}/>;
+    <Route path="/applicant/login" element={<LoginPage/>}/>;
+    <Route path="/applicant/register" element={<RegistrationPage/>} />;
+    <Route path="/applicant/jobs-page" element={<JobListPage/>} />;
+    <Route path="/recruitor/NewJob" element={<PostJob/>} />;
+    <Route path="/recruitor/jobs-validation" element={<JobValidationPage/>} />;
     <Route path="/reactivate" element="reactivate" />;
     </Routes>
     </div>

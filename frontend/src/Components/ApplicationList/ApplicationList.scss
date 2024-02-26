@@ -1,0 +1,59 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.applicant {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: $yellow;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding: 2rem 1rem;
+    margin-top: 10px;
+    border-radius: $border-radius;
+
+    &__card {
+        display: flex;
+        height: fit-content;
+        -webkit-box-pack: center;
+        justify-content: center;
+        transition: height 0.1s ease-in-out 0s;
+        width: 100%;
+
+        &-part {
+            display: flex;
+            -webkit-box-pack: justify;
+            max-width: 64rem;
+            padding: 0 1rem;
+            gap: 1.5rem;
+            padding-bottom: 10px;
+        }
+
+        &-inner {
+            max-width: 64rem;
+            width: 100%;
+            border-radius: 0.75rem;
+            background-color: white;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-left: 4px solid $green;
+        }
+    }
+
+    &__icon-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__group {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &___heading{
+color: $slate;
+    }
+}

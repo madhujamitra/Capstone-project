@@ -10,13 +10,19 @@ router.get('/', (req, res) => {
 
 
 router.route('/register').post((req, res) => {
-  const { email, name, password } = req.body;
+  const { email, name, password, skill, yearOfExperience } = req.body;
   const newUser = {
     id:uuidv4(),
+    sessionId: uuidv4(),
     email,
     name,
-    password
+    password,
+    skill,
+    yearOfExperience,
+    appliedjob:[]
+
   }
+  console.log(newUser);
   try {
     register(newUser);
     return res.status(200).json(newUser);
@@ -59,17 +65,21 @@ router.route('/jobs').get((req, res) => {
 
 router.route('/jobs/apply/:id').post((req, res) => {
   //res body should have id of the job which has been applied  and user who have applied to the position
-  const { applicantId,email, name } = req.body;
+  const { applicantId,email, name  } = req.body;
   const { id } = req.params;
 
   const user = {
     applicantId,
     email,
-    name
+    name,
   }
   
   try {
     const jobApplied = jobApply(user , id )
+    if (typeof jobApplied === 'string') {
+      console.log(jobApplied);
+      return res.status(200).send({ message: jobApplied });
+  }
 let response;
     if(jobApplied.status === "closed"){
        response = {

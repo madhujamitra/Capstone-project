@@ -10,7 +10,7 @@
       ],
       "location": "New York, NY",
       "industry": "Technology",
-      "status": "closed",
+      "status": "open",
       "applications": []
     },
     "2": {
@@ -24,12 +24,7 @@
       "location": "San Francisco, CA",
       "industry": "Data Science",
       "status": "open",
-      "applications": [
-        {
-          "email": "applicantEmail2@example.com",
-          "name": "Applicant Full Name 2"
-        }
-      ]
+      "applications": []
     },
     "3": {
       "title": "UI/UX Designer",
@@ -41,153 +36,10 @@
       ],
       "location": "Remote",
       "industry": "Design",
-      "status": "closed",
-      "applications": [
-        {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
-          "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
-        },
-        {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
-          "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
-        },
-        {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
-          "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
-        },
-        {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
-          "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
-        },
-        {
-          "applicantId": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
-          "email": "applicantEmail@example.com",
-          "name": "Applicant Full Name"
-        }
-      ]
+      "status": "open",
+      "applications": []
     },
     "4": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "5": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "6": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "7": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "8": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "9": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "10": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "11": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "12": {
-      "title": "Data Analyst",
-      "description": "Data analyst with strong experience in SQL and Python for data processing.",
-      "skills": [
-        "SQL",
-        "Python",
-        "Data Analysis"
-      ],
-      "location": "San Francisco, CA",
-      "industry": "Data Science",
-      "status": "open",
-      "applications": []
-    },
-    "13": {
       "title": "Data Analyst",
       "description": "Data analyst with strong experience in SQL and Python for data processing.",
       "skills": [
