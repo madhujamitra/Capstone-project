@@ -2,56 +2,22 @@
   "users": {
     "applicants": [
       {
-        "id": "a34f7186-78b4-4a06-8b91-38e41b58ca90",
-        "email": "applicantEmail@example.com",
-        "name": "Applicant Full Name",
-        "password": "applicantPassword",
-        "skills": [
-          "SQL",
-          "Python",
-          "Data Analysis"
-        ],
-        "yearOfExperience": 5,
-        "appliedjob":[2,3]
-
+        "id": "f1cb1d5f-7ea6-4fb5-812f-1b919635b2eb",
+        "sessionId": "6e0b3a5c-e210-4d8d-acc7-912d4651b35c",
+        "email": "applicant1@example.com",
+        "name": "John Doe",
+        "password": "password1",
+        "yearOfExperience": "5",
+        "appliedjob": []
       },
       {
-        "id": "a34f7186-78b4-4a06-8b91-38e41b58ca91",
-        "email": "applicantEmail@example.com",
-        "name": "Pinky",
-        "password": "Start123",
-        "skills": [
-          "SQL",
-          "Python",
-          "Data Analysis"
-        ],
-        "yearOfExperience": 5,
-        "appliedjob":[3,4]
-      },
-      {
-        "id": "87c73fbb-e243-433b-9be9-5e9158da24a6",
-        "sessionId": "4159f88b-1919-421f-99a7-aa3167cd41e5",
-        "email": "sdf@gmail.com",
-        "name": "df",
-        "password": "sdf",
-        "skills": [
-          "dsfsd"
-        ],
-        "yearOfExperience": 5,
-        "appliedjob":[4,5]
-
-      },
-      {
-        "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
-        "sessionId": "b38b2e86-03d3-4188-a14d-69cf65b0c36a",
-        "email": "sdf@gmail.com",
-        "name": "sushmita",
-        "password": "Start123",
-        "skills": [
-          "talking",
-          "eating"
-        ],
-        "yearOfExperience": 5
+        "id": "e6bec843-997e-44cc-a30a-920941b1a4d1",
+        "sessionId": "9baa1c27-bba8-435e-bdf0-8fb71f363558",
+        "email": "applicant2@example.com",
+        "name": "Jane Smith",
+        "password": "password2",
+        "yearOfExperience": "2",
+        "appliedjob": []
       }
     ],
     "recruiter": {

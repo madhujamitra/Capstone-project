@@ -141,3 +141,16 @@
 }
 }
 
+.job-title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10%;
+    &-text{
+        color: red;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+}
+

@@ -23,7 +23,6 @@ const applyJob = async(job, jobId) => {
     try {
       
      const response = await axios.post(url,applicant );
-     console.log(response)
      alert(response.data.message);
 
     } catch (error) {

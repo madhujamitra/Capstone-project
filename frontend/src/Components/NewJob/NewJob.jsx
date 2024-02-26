@@ -89,14 +89,12 @@ export default function NewJob() {
                 <div className="newjob__icon-group">
                   <label htmlFor="skills" className="newjob__label">
                     Skills
-                    <span className="newjob__second-title">
-                      (comma-separated)
-                    </span>
                     :
                   </label>
                   <input
                     id="skills"
                     type="text"
+                    placeholder="Add skill with comma saperated"
                     className="newjob__input"
                     name="skills"
                     value={formData.skills.join(",")}

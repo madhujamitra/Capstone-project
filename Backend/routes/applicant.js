@@ -18,7 +18,9 @@ router.route('/register').post((req, res) => {
     name,
     password,
     skill,
-    yearOfExperience
+    yearOfExperience,
+    appliedjob:[]
+
   }
   console.log(newUser);
   try {
@@ -74,6 +76,10 @@ router.route('/jobs/apply/:id').post((req, res) => {
   
   try {
     const jobApplied = jobApply(user , id )
+    if (typeof jobApplied === 'string') {
+      console.log(jobApplied);
+      return res.status(200).send({ message: jobApplied });
+  }
 let response;
     if(jobApplied.status === "closed"){
        response = {

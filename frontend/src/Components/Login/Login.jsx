@@ -49,7 +49,7 @@ const Login = () => {
      sessionStorage.setItem('name', response.data.user.name);
       handleBackClick();
     } catch (error) {
-        setError("try again")
+        setError("Please try again, password or email doesn't match")
      
     }
    
@@ -108,8 +108,9 @@ const Login = () => {
             <button type="submit" className="login__button">
               Login
             </button>
-            <span>{error}</span>
+            <p className="login-error">{error}</p>
           </form>
+          {isApplicant && (
           <div className="login__card__or">
             <span
               style={{
@@ -122,14 +123,22 @@ const Login = () => {
               Or
             </span>
           </div>
-
+          )}
           <div>
-            <p onClick={handleBackLogin}>
+          {isApplicant && (
+    <p onClick={handleBackLogin}>
+      Don't have an account?
+      <a href=" ">
+        <span>Sign up</span>
+      </a>
+    </p>
+  )}
+            {/* <p onClick={handleBackLogin}>
               Don't have an account?
               <a href=" ">
                 <span>Sign up</span>
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -60,8 +60,9 @@ const [output, setoutput] = useState(null);
         <div className="userv__card-background">
           <div className="userv__card-inner">
             <div className="userv__card-side-left">
-              <div>
+              <div className="job-title">
                 <h2>{job.title}</h2>
+                <span className="job-title-text">{job.status}</span>
               </div>
               <div className="userv__icon-group">
                 <img
