@@ -11,7 +11,9 @@
           "Python",
           "Data Analysis"
         ],
-        "yearOfExperience": 5
+        "yearOfExperience": 5,
+        "appliedjob":[2,3]
+
       },
       {
         "id": "a34f7186-78b4-4a06-8b91-38e41b58ca91",
@@ -23,7 +25,8 @@
           "Python",
           "Data Analysis"
         ],
-        "yearOfExperience": 5
+        "yearOfExperience": 5,
+        "appliedjob":[3,4]
       },
       {
         "id": "87c73fbb-e243-433b-9be9-5e9158da24a6",
@@ -32,9 +35,11 @@
         "name": "df",
         "password": "sdf",
         "skills": [
-          "dsfsd" 
+          "dsfsd"
         ],
-        "yearOfExperience": 5
+        "yearOfExperience": 5,
+        "appliedjob":[4,5]
+
       },
       {
         "id": "97c5bd3a-fa02-435d-b040-d63126864b95",
@@ -42,7 +47,7 @@
         "email": "sdf@gmail.com",
         "name": "sushmita",
         "password": "Start123",
-        "skill": [
+        "skills": [
           "talking",
           "eating"
         ],

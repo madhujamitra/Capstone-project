@@ -15,7 +15,7 @@ const Registration = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    if (name === "skill") {
+    if (name === "skills") {
       const skillsArray = value.split(",").map((skill) => skill.trim());
       setFormData({
         ...formData,
@@ -48,7 +48,7 @@ const Registration = () => {
   };
 
   const handleBackClick = () => {
-    navigate("/recruitor/login");
+    navigate("/applicant/login");
   };
 
   return (

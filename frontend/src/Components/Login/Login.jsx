@@ -28,6 +28,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    sessionStorage.clear();
     let url;
     const updatedItem = {
       email: formData.email,
@@ -59,6 +60,14 @@ const Login = () => {
     navigate("/recruitor/jobs-validation");
     } else if (isApplicant){
         navigate("/applicant/jobs-page"); 
+    }
+  };
+
+  const handleBackLogin = () => {
+    if (isRecruiter) {
+    navigate("/recruitor/register");
+    } else if (isApplicant){
+        navigate("/applicant/register"); 
     }
   };
   return (
@@ -115,8 +124,8 @@ const Login = () => {
           </div>
 
           <div>
-            <p>
-              Don't have an account?{" "}
+            <p onClick={handleBackLogin}>
+              Don't have an account?
               <a href=" ">
                 <span>Sign up</span>
               </a>
