@@ -3,7 +3,7 @@ HireSwift
 
 ## Overview
 
-A job portal where each posting is capped at 10 applications, then closed for review, with the option to reopen if no suitable candidates are found.
+A job portal where each posting is capped at 5 applications, then closed for review, with the option to reopen if no suitable candidates are found.
 
 ### Problem
 
