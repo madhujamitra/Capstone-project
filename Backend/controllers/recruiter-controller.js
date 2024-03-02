@@ -41,9 +41,9 @@ const applicationsRejected = (user, jobId, Status) => {
     
 
     const job = joblist.jobs[jobId];
-    if (job) {
+    if(job) {
         job.applications.forEach(application => {
-            if (application.applicantId === user.applicantId) {
+            if (application.id === user.applicantId) {
                 application.applicationStatus = Status;
               
             }
@@ -64,17 +64,16 @@ const reactivate = (jobId) =>{
             joblist.jobs[jobId].applications = [];
             joblist.jobs[jobId].status = "open"
             fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
-            return { message: "All applications rejected. Job reactivated with no applications.", applications: joblist.jobs[jobId].applications };
+            return { message: "All applications rejected. Job reactivated with no applications.", job: joblist.jobs[jobId] };
         } else {
-            return { message: "Not all applications are rejected. Please recheck.", applications: joblist.jobs[jobId].applications };
+            return { message: "Not all applications are rejected. Please recheck.", job: joblist.jobs[jobId].applications };
         }
     } else {
         return { message: "Job not found." };
     }
     
     fs.writeFileSync("./data/jobs.json", JSON.stringify(joblist, null, 2));
-   // console.log("joblist.jobs[jobId].applications", joblist.jobs[jobId].applications);
-    return joblist.jobs[jobId].applications;
+    return joblist.jobs[jobId].job;
 
 }
 

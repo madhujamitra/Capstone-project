@@ -82,7 +82,6 @@ router.route('/jobs/:jobId/application').put((req, res)=>{
   
   const user = {
     applicantId,
-   
   }
   const Status = status ;
  console.log(Status);

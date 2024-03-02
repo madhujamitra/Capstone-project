@@ -4,7 +4,7 @@ import Location from "../../Assets/Images/icon/location.svg";
 import Description from "../../Assets/Images/icon/description.svg";
 import DialogBox from "./DialogBox";
 import ApplicationList from "../ApplicationList/ApplicationList";
-import { useState } from "react";
+import {  useState } from "react";
 import axios from 'axios';
 
 export default function JobCardDetail({
@@ -14,7 +14,10 @@ export default function JobCardDetail({
 }) {
   const [List, setList] = useState(false);
   const [open, setOpen] = useState(false);
-const [output, setoutput] = useState(null);
+  const [output, setoutput] = useState(null);
+  const [applicationStatus, setApplicationStatus] = useState(null);
+ 
+ 
 
   const handleListOpen = () => {
     setList(true);
@@ -36,21 +39,32 @@ const [output, setoutput] = useState(null);
     const url = `http://localhost:8080/api/Recruiter/jobs/${jobId}/reactivate`;
    
     try {
-      console.log("2");
+
       const response = await axios.put(url);
-     console.log(response.data);
-     
       setoutput(response.data);
       setOpen(true);
+     console.log(response.data.job.status);
+     console.log(response.data)
+     if(response.data.job.status === "open" && response.data.message === "All applications rejected. Job reactivated with no applications."){
+      document.getElementsByClassName('job-title-text')[jobId - 1].style.display = "none";
+      document.getElementsByClassName('job-title-text2')[jobId - 1].style.display = "block";
+      setApplicationStatus("open");
+     }
+     
+    
+  
     } catch (error) {
       console.error('Failed to perform operation:', error);
       
     }
   };
 
+ 
+
    const handleClickOpen = () => {
     performOperation();
-    
+
+   
   };
 
 
@@ -62,7 +76,12 @@ const [output, setoutput] = useState(null);
             <div className="userv__card-side-left">
               <div className="job-title">
                 <h2>{job.title}</h2>
-                <span className="job-title-text">{job.status}</span>
+                {/* <span className="job-title-text">{job.status}</span> */}
+                <span className={`job-title-text ${job.status === 'open' ? 'status-open' : 'status-closed'}`}>
+  {job.status}
+</span>
+
+                <span className="job-title-text2">{applicationStatus}</span>
               </div>
               <div className="userv__icon-group">
                 <img

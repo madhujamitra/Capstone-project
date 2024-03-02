@@ -59,14 +59,16 @@ export default function ApplicationList({ List, jobId }) {
       const url = `http://localhost:8080/api/Recruiter/jobs/${jobId}/application`;
       const StatusUpdate = { 
         applicantId: currentApplicantId,
-        status: status }; 
+        status: status };
+        console.log(StatusUpdate);
       const response = await axios.put(url, StatusUpdate);
       
       if (response.status === 200) {
         setApplications(applications.map(app => 
-          app.applicantId === currentApplicantId ? { ...app, localStatus: status } : app
+          app.id === currentApplicantId ? { ...app, localStatus: status } : app
         ));
       }
+    
     } catch (error) {
       console.error("Error updating status:", error);
     }
@@ -118,7 +120,7 @@ export default function ApplicationList({ List, jobId }) {
                   aria-controls="simple-menu"
                   aria-haspopup="true"
                   onClick={(event) =>
-                    handleMenuClick(event, applicant.applicantId)
+                    handleMenuClick(event, applicant.id)
                   }
                   style={{
                     backgroundColor: "#F0DC28",
@@ -135,11 +137,11 @@ export default function ApplicationList({ List, jobId }) {
                   keepMounted
                   open={
                     Boolean(anchorEl) &&
-                    currentApplicantId === applicant.applicantId
+                    currentApplicantId === applicant.id
                   }
                   onClose={handleClose}
                 >
-                  {["Rejected", "Accepted", "In Interview", "Selected"].map(
+                  {["Pending","Rejected", "Accepted", "In Interview", "Selected"].map(
                     (statusOption) => (
                       <MenuItem
                         key={statusOption}
@@ -151,6 +153,10 @@ export default function ApplicationList({ List, jobId }) {
                   )}
                 </Menu>
               </div>
+              
+
+
+
             </div>
           </div>
         </div>

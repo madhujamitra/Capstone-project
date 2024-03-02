@@ -3,11 +3,14 @@ import Skill from "../../Assets/Images/icon/tool.svg";
 import Industry from "../../Assets/Images/icon/industry.svg";
 import Location from "../../Assets/Images/icon/location.svg";
 import Description from "../../Assets/Images/icon/description.svg";
+import React, { useState } from 'react';
+import AlertDialog from './AlertDialog'
 
 import axios from 'axios';
 
 export default function JobList({JobPost}) {
-
+  const [open, setOpen] = useState(false);
+  const [alertMessage, setAlertMessage] = useState('');
 
 
 const applyJob = async(job, jobId) => {
@@ -23,12 +26,18 @@ const applyJob = async(job, jobId) => {
     try {
       
      const response = await axios.post(url,applicant );
-     alert(response.data.message);
+    //  alert(response.data.message);
+    setAlertMessage(response.data.message);
+      setOpen(true);
 
     } catch (error) {
       console.error('Failed to perform operation:', error);
       
     }
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   return (
@@ -42,8 +51,9 @@ const applyJob = async(job, jobId) => {
         <div className="job__card-background">
           <div className="job__card-inner">
             <div className="job__card-side-left">
-              <div>
+            <div className="job-title">
                 <h2>{jobDetails.title}</h2>
+                <span className="job-title-text">{jobDetails.status}</span>
               </div>
               <div className="job__icon-group">
                 <img src={Description} className="job__icon" alt="Descrption" />
@@ -84,6 +94,7 @@ const applyJob = async(job, jobId) => {
             <button className="job__card-button"
             onClick={() => applyJob(jobDetails, jobId)}
             > Apply </button>
+             <AlertDialog open={open} handleClose={handleClose} message={alertMessage} />
           </div>
         </div>
       </div>
