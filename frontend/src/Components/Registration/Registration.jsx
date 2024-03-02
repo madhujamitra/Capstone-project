@@ -17,6 +17,7 @@ const Registration = () => {
     const { name, value } = e.target;
     if (name === "skills") {
       const skillsArray = value.split(",").map((skill) => skill.trim());
+      console.log(skillsArray);
       setFormData({
         ...formData,
         [name]: skillsArray,

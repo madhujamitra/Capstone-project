@@ -24,7 +24,39 @@
       "location": "San Francisco, CA",
       "industry": "Data Science",
       "status": "open",
-      "applications": []
+      "applications": [
+        {
+          "id": "f1cb1d5f-7ea6-4fb5-812f-1b919635b2eb",
+          "sessionId": "6e0b3a5c-e210-4d8d-acc7-912d4651b35c",
+          "email": "applicant1@example.com",
+          "name": "John Doe",
+          "password": "password1",
+          "yearOfExperience": "5",
+          "skills": [
+            "React",
+            "Node.js",
+            "JavaScript"
+          ],
+          "appliedjob": [
+            "2"
+          ]
+        },
+        {
+          "id": "54cd0244-bc47-4162-8b01-97572586749d",
+          "sessionId": "abe85d44-0224-4c7d-8697-bc10a755fcbf",
+          "email": "madhujamitra3117@gmail.com",
+          "name": "Madhuja Mitraa",
+          "password": "Start123",
+          "skills": [
+            "React",
+            "angular"
+          ],
+          "yearOfExperience": "2",
+          "appliedjob": [
+            "2"
+          ]
+        }
+      ]
     },
     "3": {
       "title": "UI/UX Designer",
@@ -49,6 +81,49 @@
       ],
       "location": "San Francisco, CA",
       "industry": "Data Science",
+      "status": "open",
+      "applications": [
+        {
+          "id": "54cd0244-bc47-4162-8b01-97572586749d",
+          "sessionId": "abe85d44-0224-4c7d-8697-bc10a755fcbf",
+          "email": "madhujamitra3117@gmail.com",
+          "name": "Madhuja Mitraa",
+          "password": "Start123",
+          "skills": [
+            "React",
+            "angular"
+          ],
+          "yearOfExperience": "2",
+          "appliedjob": [
+            "2",
+            "4"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "title": "Senior Frontend Developer",
+      "description": "As a Senior Frontend Developer at Krux, your role will be to build a core component of our product that enables our customers to gain valuable insights. Working alongside a self-motivated team, you will be responsible for solving problems and making a significant impact",
+      "skills": [
+        "Git",
+        "HTML",
+        "HTML5",
+        "Node.js"
+      ],
+      "location": "Vancouver",
+      "industry": "Insurance ",
+      "status": "open",
+      "applications": []
+    },
+    "6": {
+      "title": "developer",
+      "description": "hsdfkjshd",
+      "skills": [
+        "react",
+        "sass"
+      ],
+      "location": "vancouver",
+      "industry": "tech",
       "status": "open",
       "applications": []
     }

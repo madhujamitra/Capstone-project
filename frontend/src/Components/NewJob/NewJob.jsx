@@ -62,7 +62,7 @@ export default function NewJob() {
               <div className="newjob__card-side">
                 <div className="newjob__icon-group">
                   <label htmlFor="name" className="newjob__label">
-                    Name:
+                    Title:
                   </label>
                   <input
                     id="name"

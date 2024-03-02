@@ -147,10 +147,25 @@
     flex-wrap: wrap;
     gap: 10%;
     &-text{
-        color: red;
     font-size: small;
     font-weight: bold;
     text-transform: uppercase;
+    display:block;
     }
+    &-text2{
+        color: $green;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: none;
+    }
+
+}
+
+.status-open{
+    color: $green;
+}
+.status-closed{
+    color: $red;
 }
 

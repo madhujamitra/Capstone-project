@@ -1,0 +1,174 @@
+{
+    "jobs": {
+      "1": {
+        "title": "Software Engineer",
+        "description": "Full stack software engineer required with expertise in React and Node.js",
+        "skills": [
+          "React",
+          "Node.js",
+          "JavaScript"
+        ],
+        "location": "New York, NY",
+        "industry": "Technology",
+        "status": "closed",
+        "applications": [
+          {
+            "id": "23fb6a7e-be23-48c9-a0fb-6a5e507cb3c0",
+            "sessionId": "00b3c229-7830-4444-9d00-de2f763cb2e6",
+            "email": "patrick@gmail.com",
+            "name": "Patrick",
+            "password": "Password",
+            "skills": [
+              "backend",
+              "nodejs",
+              "nextjs"
+            ],
+            "yearOfExperience": "7",
+            "appliedjob": [
+              "1"
+            ],
+            "applicationStatus": "Rejected"
+          },
+          {
+            "id": "61fb5453-c34d-48af-9cab-28a87d4c5d60",
+            "sessionId": "84b38b31-1d2c-49c5-8e17-5d9569c6f627",
+            "email": "Vineet.sagar@gmail.co",
+            "name": "vineet sagar",
+            "password": "password",
+            "skills": [
+              "desgin",
+              "managment",
+              "sql"
+            ],
+            "yearOfExperience": "2",
+            "appliedjob": [
+              "1"
+            ],
+            "applicationStatus": "Pending"
+          },
+          {
+            "id": "3bd45bb5-c708-43e8-82b5-a597bf3c1c08",
+            "sessionId": "f00d9e23-d56f-4263-95ac-16f439ec3e95",
+            "email": "Rahulsharma@gmail.com",
+            "name": "Rahul Sharma",
+            "password": "Password",
+            "yearOfExperience": "2",
+            "appliedjob": [
+              "1"
+            ],
+            "skills": [
+              "desgin",
+              "managment",
+              "sql"
+            ],
+            "applicationStatus": "Pending"
+          },
+          {
+            "id": "e6bec843-997e-44cc-a30a-920941b1a4d1",
+            "sessionId": "9baa1c27-bba8-435e-bdf0-8fb71f363558",
+            "email": "applicant2@example.com",
+            "name": "Jane Smith",
+            "password": "password2",
+            "yearOfExperience": "2",
+            "skills": [
+              "Angular",
+              "Figma",
+              "Typescript"
+            ],
+            "appliedjob": [
+              "1"
+            ],
+            "applicationStatus": "Pending"
+          },
+          {
+            "id": "f1cb1d5f-7ea6-4fb5-812f-1b919635b2eb",
+            "sessionId": "6e0b3a5c-e210-4d8d-acc7-912d4651b35c",
+            "email": "applicant1@example.com",
+            "name": "John Doe",
+            "password": "password1",
+            "yearOfExperience": "5",
+            "skills": [
+              "React",
+              "Node.js",
+              "JavaScript"
+            ],
+            "appliedjob": [
+              "2",
+              "3",
+              "1"
+            ]
+          }
+        ]
+      },
+      "2": {
+        "title": "Data Analyst",
+        "description": "Data analyst with strong experience in SQL and Python for data processing.",
+        "skills": [
+          "SQL",
+          "Python",
+          "Data Analysis"
+        ],
+        "location": "San Francisco, CA",
+        "industry": "Data Science",
+        "status": "open",
+        "applications": [
+          {
+            "id": "f1cb1d5f-7ea6-4fb5-812f-1b919635b2eb",
+            "sessionId": "6e0b3a5c-e210-4d8d-acc7-912d4651b35c",
+            "email": "applicant1@example.com",
+            "name": "John Doe",
+            "password": "password1",
+            "yearOfExperience": "5",
+            "skills": [
+              "React",
+              "Node.js",
+              "JavaScript"
+            ],
+            "appliedjob": [
+              "2"
+            ]
+          }
+        ]
+      },
+      "3": {
+        "title": "UI/UX Designer",
+        "description": "Seeking a creative UI/UX designer with experience in Figma and Sketch.",
+        "skills": [
+          "Figma",
+          "Sketch",
+          "Adobe XD"
+        ],
+        "location": "Remote",
+        "industry": "Design",
+        "status": "open",
+        "applications": []
+      },
+      "4": {
+        "title": "Data Analyst",
+        "description": "Data analyst with strong experience in SQL and Python for data processing.",
+        "skills": [
+          "SQL",
+          "Python",
+          "Data Analysis"
+        ],
+        "location": "San Francisco, CA",
+        "industry": "Data Science",
+        "status": "open",
+        "applications": []
+      },
+      "5": {
+        "title": "Senior Frontend Developer",
+        "description": "As a Senior Frontend Developer at Krux, your role will be to build a core component of our product that enables our customers to gain valuable insights. Working alongside a self-motivated team, you will be responsible for solving problems and making a significant impact",
+        "skills": [
+          "Git",
+          "HTML",
+          "HTML5",
+          "Node.js"
+        ],
+        "location": "Vancouver",
+        "industry": "Insurance ",
+        "status": "open",
+        "applications": []
+      }
+    }
+  }

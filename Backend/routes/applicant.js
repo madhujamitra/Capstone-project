@@ -10,14 +10,15 @@ router.get('/', (req, res) => {
 
 
 router.route('/register').post((req, res) => {
-  const { email, name, password, skill, yearOfExperience } = req.body;
+  const { email, name, password, skills, yearOfExperience } = req.body;
+
   const newUser = {
     id:uuidv4(),
     sessionId: uuidv4(),
     email,
     name,
     password,
-    skill,
+    skills,
     yearOfExperience,
     appliedjob:[]
 
