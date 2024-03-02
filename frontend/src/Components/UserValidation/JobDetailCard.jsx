@@ -50,12 +50,10 @@ export default function JobCardDetail({
       document.getElementsByClassName('job-title-text2')[jobId - 1].style.display = "block";
       setApplicationStatus("open");
      }
-     
-    
-  
+
     } catch (error) {
       console.error('Failed to perform operation:', error);
-      
+  
     }
   };
 
